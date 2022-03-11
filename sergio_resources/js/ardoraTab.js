@@ -14,14 +14,14 @@ var x=canvas.width-2; var grd = contexto.createRadialGradient(x/2, x/2,1, x/2, x
 grd.addColorStop(1,colorSele);contexto.fillStyle = grd; contexto.fillRect(10, 10,canvas.width-20,canvas.height-20);
 contexto.lineWidth = 1; contexto.strokeStyle =colorText;
 contexto.fillStyle =colorText;contexto.beginPath();contexto.strokeRect(10, 10,canvas.width-20,canvas.height-20);
-contexto.font="bold 36px Verdana"; contexto.textAlign = "left"; contexto.fillText("?",25,48); contexto.stroke();}
+contexto.font="bold 36px Verdana"; contexto.textAlign = "left"; contexto.fillText(">",20,48); contexto.stroke();}
 function removeOk(){ var canvas = document.getElementById("buttonOkCanvas"); var contexto = canvas.getContext("2d");
 contexto.fillStyle =colorSele;contexto.fillRect(1,1,canvas.width-2,canvas.height-2);
 var x=canvas.width-2; var grd = contexto.createRadialGradient(x/2, x/2,1, x/2, x/2, 30);grd.addColorStop(0,colorBack);
 grd.addColorStop(1,colorButton);contexto.fillStyle = grd; contexto.fillRect(10, 10,canvas.width-20,canvas.height-20);
 contexto.lineWidth = 1; contexto.strokeStyle =colorText;
 contexto.fillStyle =colorText;contexto.beginPath();contexto.strokeRect(10, 10,canvas.width-20,canvas.height-20);
-contexto.font="bold 36px Verdana"; contexto.textAlign = "left"; contexto.fillText("?",25,48); contexto.stroke();}
+contexto.font="bold 11px Verdana"; contexto.textAlign = "left"; contexto.fillText("Ejecutar",10,40); contexto.stroke();}
 function paintTab(){if (document.getElementById("ardoraTabCanvas")!=null){var canvas = document.getElementById("ardoraTabCanvas");var contexto = canvas.getContext("2d");contexto.fillStyle =$(canvas).css("background-color");
 contexto.clearRect(0,0,canvas.width,canvas.height); contexto.lineWidth = 1; contexto.strokeStyle = "black";contexto.fillStyle = "black";if (!isShowMessage){timeAct-=1;}contexto.font="8px Verdana";
 var profundidade=1; var x = canvas.width / 2; var y = canvas.width / 2+19;
